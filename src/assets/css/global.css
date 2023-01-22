@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Heebo', sans-serif;
+    
+  }
+
+html, body {
+    background:#F9FBFD;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+	color: #3F434A;
+	-webkit-tap-highlight-color: transparent;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+/* ::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #8A9099;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #8A9099;
+} */
+
