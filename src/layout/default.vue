@@ -6,7 +6,7 @@ import Sidebar from '../components/sidebar.vue';
 		<sidebar/>
 		<div class="flex flex-col w-full">
 			<topbar />
-			<div class="py-[50px] px-[40px] h-full overflow-auto">
+			<div class="py-[50px] px-6 lg:px-[40px] h-full overflow-auto">
 				<slot></slot>
 			</div>
 		</div>
