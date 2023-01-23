@@ -48,7 +48,7 @@ let CustomRouteLayer = MQ.Routing.RouteLayer.extend({
         var marker;
 
         custom_icon = L.icon({
-            iconUrl: 'https://www.mapquestapi.com/staticmap/geticon?uri=poi-red_1.png',
+            iconUrl: 'https://firebasestorage.googleapis.com/v0/b/fir-prac-fb60b.appspot.com/o/Frame.svg?alt=media&token=0653a260-a0df-4577-8ffc-2e57b60ec568',
             iconSize: [20, 29],
             iconAnchor: [10, 29],
             popupAnchor: [0, -29]
@@ -64,7 +64,7 @@ let CustomRouteLayer = MQ.Routing.RouteLayer.extend({
         var marker;
 
         custom_icon = L.icon({
-            iconUrl: 'https://www.mapquestapi.com/staticmap/geticon?uri=poi-blue_1.png',
+            iconUrl: 'https://firebasestorage.googleapis.com/v0/b/fir-prac-fb60b.appspot.com/o/Frame.svg?alt=media&token=0653a260-a0df-4577-8ffc-2e57b60ec568',
             iconSize: [20, 29],
             iconAnchor: [10, 29],
             popupAnchor: [0, -29]
