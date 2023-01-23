@@ -1,3 +1,4 @@
+/
 <template>
 	<div class="bg-white rounded-lg flex flex-col">
 		<div class="px-5 py-6 flex items-center justify-between border-b">
@@ -12,18 +13,17 @@
 	</div>
 </template>
 
+
 <script setup lang="ts">
 import { onMounted} from 'vue'
 
+let map:any, dir:any;
+// @ts-ignore
+declare let L: any;
+// @ts-ignore
+declare let MQ: any;
 
 onMounted(() => {
-	// let map = L.map('map').setView([51.505, -0.09], 13);
-	// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	// 	maxZoom: 19,
-	// 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	// }).addTo(map);
-
-	let map:any, dir:any;
 
 map = L.map('map', {
   layers: MQ.mapLayer(),
@@ -41,10 +41,6 @@ dir.route({
 	{ latLng: { lat: 6.6921608292662205, lng: 3.235856879719637 } },
   ]
 });
-var myIcon = L.divIcon({className: 'my-div-icon', html: '<span>STOP A</span>'});
-// you can set .my-div-icon styles in CSS
-
-L.marker([6.648512988076881, 3.305894721126463], {icon: myIcon}).addTo(map);
 
 let CustomRouteLayer = MQ.Routing.RouteLayer.extend({
     createStartMarker: function (location:any, stopNumber:any) {
